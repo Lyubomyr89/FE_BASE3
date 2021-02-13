@@ -1,0 +1,172 @@
+body{
+    /* background-color: rgb(240, 215, 182); */
+}
+
+*{
+    /* Универсальный селектор */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Селектор тега */
+p{
+    /* color: green; */
+    /* font-weight: 700; */
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+ol{
+    background-color: gray;
+}
+
+/* Селектор класса */
+
+.boy{
+    /* color: green; */
+}
+
+.girl{
+    color: gold;
+}
+
+.list-student{
+    background-color: lightcoral;
+}
+
+.list-student__item{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+    /* border: 1px solid red; */
+}
+
+/* Селектор идентификатора */
+#services{
+    background-color: lightgreen;
+}
+
+
+/* Селектор потомка */
+nav ul{
+    /* background-color: seagreen; */
+}
+
+#header{
+    background: url(../images/v-day.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.nav {
+    margin-bottom: 50px;
+    padding-top: 30px;
+}
+.logo{
+    color: white;
+    font-size: 30px;
+    font-weight:900;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.menu {
+    display: inline-block;
+    width: calc(100% - 100px);
+    /* margin-left: calc(100% - 90px - 520px); */
+    font-size: 0;
+    text-align: right;
+}
+.menu__item {
+    display: inline-block;
+    background-color: #fc661e;
+    padding: 10px;
+    transition: all .2s linear;
+}
+
+.menu__item:hover {
+    background-color: rgba(252, 56, 30, 0.884);
+}
+
+.menu__item:not(:last-child) {
+    border-right: 1px solid #fff;
+}
+
+.menu__item a {
+    color: #fff;
+    font-size: 16px;
+}
+
+
+.center-1{
+    background-color: yellow;
+    height: 300px;
+    max-width: 300px;
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+.inner{
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+}
+
+.box {
+    width: 600px;
+    background: rgb(169, 169, 207);
+    margin: auto;
+    padding: 20px;
+}
+
+.box div {
+ background-color: darksalmon;
+ width: 300px;
+ height: 100px;
+ color: #fff;
+ font-weight: 700;
+ text-align: center;
+ line-height: 100px;
+ margin-bottom: 30px;
+}
+.left {
+    margin-right: auto;
+}
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+.right {
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+.text{
+    max-width: 1000px;
+    margin: 20px auto 50px; 
+    color: blue;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 52px;
+    font-family: Verdana, sans-serif;
+    text-decoration: underline;
+    text-indent: 100px;
+    line-height: 1.2;
+    /* line-height: 46px;*/
+    text-align: center;
+    text-align: left;
+    text-align: right;
+    text-align: justify;
+}
