@@ -1,0 +1,163 @@
+body {
+  /* background-color: rgb(240, 215, 182); */
+}
+
+* {
+  /* Универсальный селектор */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Селектор тега */
+p {
+  /* color: green; */
+  /* font-weight: 700; */
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ol {
+  background-color: gray;
+}
+
+/* Селектор класса */
+
+.boy {
+  /* color: green; */
+}
+
+.girl {
+  color: gold;
+}
+
+.list-student {
+  background-color: lightcoral;
+}
+
+.list-student__item {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+  /* border: 1px solid red; */
+}
+
+/* Селектор идентификатора */
+#services {
+  background-color: lightgreen;
+}
+
+/* Селектор потомка */
+nav ul {
+  /* background-color: seagreen; */
+}
+
+#header {
+  background-color: red;
+
+  /* 0 - 255, 0 - 100% */
+  background-color: rgb(255, 245, 152);
+  background-color: rgb(100%, 0, 0);
+
+  /* HEX  0-9 a-f */
+  background-color: #ffc350;
+
+  /* HSL (Hue, Saturation, Lightness) */
+  background-color: hsl(39, 100%, 66%);
+
+  background-image: url(../img/v-day.jpg);
+  background-position: center;
+
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgba(160, 82, 45, 0.8);
+  background-color: #a0512dda;
+  background-color: hsla(19, 56%, 40%, 0.8);
+  opacity: 1;
+}
+
+/* Градієнти */
+
+.news-box {
+  min-height: 100vh;
+  background-image: radial-gradient(
+      ellipse at center,
+      rgba(255, 255, 0, 0.664),
+      rgba(0, 0, 255, 0.521)
+    ),
+    linear-gradient(
+      90deg,
+      rgba(252, 227, 138, 0.16) 0%,
+      rgba(243, 129, 129, 0.2) 100%
+    ),
+    linear-gradient(38turn, orangered, crimson);
+}
+
+.news-box2 {
+  padding: 30px 0;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(../img/photo.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Псевдоелементи */
+
+.news-box2::before,
+.news-box2::after {
+  content: "";
+  display: block;
+  background-color: rgb(235, 109, 6);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.news-box2::before {
+  margin-bottom: 30px;
+}
+
+.news-box2::after {
+  margin-top: 30px;
+}
+
+.news-box2 p {
+  background-color: rgba(192, 192, 192, 0.75);
+  padding: 20px;
+  /* user-select: none; */
+}
+
+.news-box2 p::first-letter {
+  font-size: 32px;
+  color: pink;
+  font-weight: bold;
+}
+.news-box2 p::first-line {
+  background-color: powderblue;
+}
+
+.news-box2 p::selection {
+  background-color: rgb(247, 222, 6);
+}
+
+
+/* Псевдокласи стану  :hover, :focus, :disabled, :checked */ 
+.news-box2 p:hover {
+  background-color: rgb(255, 245, 152);
+}
