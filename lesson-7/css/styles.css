@@ -128,6 +128,26 @@ section {
   box-shadow: 1px 1px 6px 3px #000000c4;
 }
 
+/* ----------------------------- */
+body {
+  border: 3px solid coral;
+}
+
+main {
+  border: cornflowerblue 2px solid;
+}
+
+.ab {
+  border: 5px solid #03a9f4;
+}
+
+.box-ab {
+  position: absolute;
+  top: 0;
+}
+
+/* ----------------------------- */
+
 /* flex */
 
 .f-box {
@@ -154,4 +174,5 @@ section {
 
 .f-box_item:last-child {
   background-color: rgb(118, 16, 185);
+  position: sticky;
 }
