@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson - 9</title>
+    <link rel="stylesheet" href="./css/animate.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header id="header">
       <div class="container">
-        <h1 class="title">CSS-переходи. CSS-анімація</h1>
+        <h1
+          class="title animate__animated animate__bounceInUp animate__delay-1s animate__repeat-2"
+        >
+          CSS-переходи. CSS-анімація
+        </h1>
       </div>
     </header>
     <main>
@@ -24,13 +29,26 @@
 
       <section class="box-animations">
         <div class="container">
-          <h2>CSS-анімація</h2>
+          <h2 class="animate__animated animate__bounce">CSS-анімація</h2>
           <div class="trans-element trans-1"></div>
           <div class="trans-element trans-2"></div>
         </div>
       </section>
 
-      <img src="./images/rocket.png" alt="rocket" width="100" class="rocket">
+      <section class="btn-box">
+        <div class="container">
+          <button class="btn btn-pulse">click</button>
+          <button class="btn fadeInLeft">fadeInLeft</button>
+        </div>
+      </section>
+      <section class="circle-button-box">
+        <button class="pulse">
+          <img src="./images/phone-call.svg" alt="call" class="call-img" width="40"/>
+          <span class="btn-text">Call button</span>
+        </button>
+      </section>
+
+      <img src="./images/rocket.png" alt="rocket" width="100" class="rocket" />
     </main>
   </body>
 </html>

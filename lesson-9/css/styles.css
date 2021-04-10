@@ -16,53 +16,52 @@
   font-size: 32px;
 }
 
-section{
-    border-bottom: 1px dashed orangered;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    margin-bottom: 20px;
-    transition: .5s background-color linear;
+section {
+  border-bottom: 1px dashed orangered;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  transition: 0.5s background-color linear;
 }
 
-h2{
-    margin: 15px 0;
-    text-align: center;
-    font-size: 24px;
-    color: rgb(150, 100, 197);
+h2 {
+  margin: 15px 0;
+  text-align: center;
+  font-size: 24px;
+  color: rgb(150, 100, 197);
 }
 
-.box-trans{
+.box-trans {
   background-color: blanchedalmond;
   min-height: 300px;
 }
 
-.box-trans:hover{
+.box-trans:hover {
   background-color: rgb(199, 146, 146);
 }
 
-.trans-element{
+.trans-element {
   width: 100px;
   height: 100px;
 }
 
-.trans-1{
+.trans-1 {
   background-color: #ccc;
   transition: 2s transform cubic-bezier(0.59, -0.06, 0.13, 1.54);
 }
 
-.trans-2{
-  transition: 2s transform cubic-bezier(.26,-0.68,.68,1.51);
+.trans-2 {
+  transition: 2s transform cubic-bezier(0.26, -0.68, 0.68, 1.51);
   background-color: pink;
 }
 
-.box-trans:hover .trans-element{
-  transform: translateX(1000px) scale(.8) rotate(60deg);
+.box-trans:hover .trans-element {
+  transform: translateX(1000px) scale(0.8) rotate(60deg);
 }
 
 /* CSS-анімація */
 
-
-.box-animations .trans-element{
+.box-animations .trans-element {
   animation-duration: 2s;
 
   animation-delay: 3s;
@@ -74,56 +73,55 @@ h2{
   animation-fill-mode: both;
   animation-fill-mode: forwards;
 
-
   animation-direction: alternate;
   animation-direction: alternate-reverse;
   animation-direction: reverse;
   animation-direction: normal;
 }
-.box-animations .trans-1{
+.box-animations .trans-1 {
   animation-name: box-transform;
 }
 
-@keyframes box-transform{
-  from{
+@keyframes box-transform {
+  from {
     transform: rotate(0) scale(0);
   }
 
-  50%{
+  50% {
     background-color: brown;
   }
 
-  to{
+  to {
     transform: rotate(320deg) scale(1.1);
     background-color: rgb(250, 205, 7);
   }
 }
 
-.box-animations .trans-2{
+.box-animations .trans-2 {
   animation-name: box-transform-2;
   animation-play-state: paused;
 }
 
-@keyframes box-transform-2{
-  0%{
+@keyframes box-transform-2 {
+  0% {
     transform: translateX(0) rotate(0);
   }
 
-  50%{
+  50% {
     background-color: rgb(187, 131, 131);
     transform: translateX(450px) rotate(45deg);
   }
 
-  100%{
+  100% {
     background-color: rgb(187, 131, 131);
   }
 }
 
-.box-animations:hover .trans-2{
+.box-animations:hover .trans-2 {
   animation-play-state: running;
 }
 
-.rocket{
+.rocket {
   transform: rotate(-45deg);
   position: fixed;
   bottom: 0;
@@ -133,16 +131,160 @@ h2{
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
-  animation-timing-function: cubic-bezier(.34,-0.67,.58,1);
+  animation-timing-function: cubic-bezier(0.34, -0.67, 0.58, 1);
   animation-delay: 2s;
 }
 
-@keyframes rocket{
-  0%{
+@keyframes rocket {
+  0% {
     bottom: 0;
   }
 
-  100%{
+  100% {
     bottom: 130%;
   }
+}
+
+.btn-box .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  padding: 10px 15px;
+  min-width: 150px;
+  background-color: burlywood;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  border: 2px solid #5818c9;
+  border-radius: 20px;
+  transition: 0.2s all ease-in;
+  cursor: pointer;
+  box-shadow: -1px 0px 9px 0px rgba(0, 0, 0, 0.75);
+}
+
+.btn:hover {
+  opacity: 0.8;
+  box-shadow: -1px 0px 9px 0px rgba(110, 110, 110, 0.75);
+}
+.btn-pulse {
+  animation: pulsate-bck 0.5s ease-in-out infinite both;
+}
+
+@keyframes pulsate-bck {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeftBig;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInLeftBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.circle-button-box {
+  background-color: rgb(28, 1, 36);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pulse,
+.btn-text,
+.call-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-text {
+  opacity: 0;
+  text-transform: uppercase;
+}
+
+.pulse {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  background-color: #5cc2e2;
+  border: none;
+  cursor: pointer;
+}
+
+.pulse::before,
+.pulse::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  bottom: -20px;
+  right: -20px;
+  border: 1px solid cyan;
+  border-radius: 50%;
+  opacity: 0;
+  animation-name: pulse-btn;
+  animation-duration: 1.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.pulse::after {
+  animation-delay: 0.5s;
+}
+
+@keyframes pulse-btn {
+  0% {
+   transform: scale(0.5);
+   opacity: 0;
+  }
+  50% {
+   opacity: 1;
+  }
+  100% {
+   transform: scale(1.2);
+   opacity: 0;
+  }
+ }
+
+.btn-text,
+.call-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pulse:hover .call-img {
+  opacity: 0;
+}
+.pulse:hover .btn-text {
+  opacity: 1;
 }
